@@ -1,0 +1,3 @@
+正在比较文件 out.txt 和 OUT2.TXT
+FC: 找不到差异
+
