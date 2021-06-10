@@ -6,6 +6,7 @@ BST::BST(int max_v){
 }
 
 BST::~BST(){
+	if(!root) return;
 	std::queue<node*> q;
 	q.push(root);
 	while(!q.empty()){

@@ -5,7 +5,7 @@ using namespace std;
 void binary_search();
 void stick();
 int main(){
-	//binary_search();
+	binary_search();
 	stick();
 	return 0;
 }

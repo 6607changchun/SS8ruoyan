@@ -5,6 +5,9 @@
 BST::BST(int max_v){
 	root = 0;
 }
+BST::BST(){
+	root = 0;
+}
 
 BST::~BST(){
 	if(!root) return;
@@ -46,7 +49,10 @@ void BST::BSTInsert(int Key, int Value){
 			p = p->left;
 		}
 	}
-	if(p) return;
+	if(p){
+		p->value = Value;
+		return;
+	}
 	node* newNode = new node;
 	newNode->key = Key;
 	newNode->value = Value;
